@@ -1,7 +1,7 @@
 const btn = document.querySelector(".btn");
 
-const getAdvice = () => {
-  fetch("https://api.adviceslip.com/advice")
+const getAdvice = async () => {
+  await fetch("https://api.adviceslip.com/advice")
     .then((r) => r.json())
     .then((json) => {
       const advice = json.slip.advice;
@@ -11,7 +11,7 @@ const getAdvice = () => {
     .catch((error) => {
       console.log(error);
     });
-  setTimeout(addTranslateButton, 800);
+  await addTranslateButton();
 };
 
 const addTranslateButton = () => {

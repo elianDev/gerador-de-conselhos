@@ -21,7 +21,7 @@ body {
 
 .container-advice.active {
   display: block;
-  padding: 0.5rem 1rem;
+  padding: 1rem 1rem;
   background: #d5cea3;
   border-radius: 4px;
   animation: active 0.3s forwards;
